@@ -1,8 +1,12 @@
 # Program by Shore to measure two temperatures HWS and HWR, plus boiler status
-# on a Raspebrry Pi Pico W, and write the data to the IoT cloud ThingSpeak
+# on a Raspberry Pi Pico W, and write the data to the IoT cloud ThingSpeak
 # and display it there.  Thanks to hippy from Raspberry Pi Forum for program help.
-# February 2023.  Pico W will installed on site in Alaska by April 2023.  Right now it
-# is on the work bench or being tested.
+#     Mathworks info
+#     https://thingspeak.com/channels/2016936/
+#        PicoW at Boiler
+#        Channel ID: 2016936
+#        Author: ShoreNice
+#        Access: Public
 
 import machine
 import urequests 
