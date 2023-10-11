@@ -1,7 +1,7 @@
 # Program by Shore to measure two temperatures HWS and HWR, plus boiler status
 # on a Raspberry Pi Pico W, and write the data to the IoT cloud ThingSpeak
 # and display it there.  Thanks to hippy from Raspberry Pi Forum for program help.
-#     Mathworks info
+#     Mathworks info,, to see channel data (not much happening in summer)
 #     https://thingspeak.com/channels/2016936/
 #        PicoW at Boiler
 #        Channel ID: 2016936
@@ -28,10 +28,10 @@ boiler = Pin(14, Pin.IN, Pin.PULL_UP) #boiler status
 led = Pin("LED", Pin.OUT)  #pico w led flasher
 tim = Timer()
 HTTP_HEADERS = {'Content-Type': 'application/json'} 
-THINGSPEAK_WRITE_API_KEY = 'EP6U24U3QPQ1823N'  
+THINGSPEAK_WRITE_API_KEY = 'EP6U2secret1823N'  
  
-ssid = 'PACHA WOOKIE'
-password = 'Dcorbell12'
+ssid = 'myssid'
+password = 'mypasswrd'
 
 
 # Configure Pico W as Station
